@@ -1,0 +1,90 @@
+/* Add custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Custom utility classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s infinite;
+}
+
+/* Enhanced button styles */
+.btn-primary {
+  @apply bg-[#50A7F9] text-white rounded-md shadow-md hover:bg-[#3b86c4] transition-all transform hover:scale-105 active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-white border border-[#50A7F9] text-[#50A7F9] rounded-md shadow-sm hover:bg-[#E0F2FE] transition-all transform hover:scale-105 active:scale-95;
+}
+
+.btn-success {
+  @apply bg-[#10B981] text-white rounded-md shadow-md hover:bg-[#0D9668] transition-all transform hover:scale-105 active:scale-95;
+}
+
+/* Card enhancements */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg transform hover:scale-[1.01];
+}
+
+/* Input field enhancements */
+.input-enhanced {
+  @apply border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#50A7F9] focus:border-transparent transition-all;
+}
+
+/* Status badges */
+.status-badge {
+  @apply flex items-center px-3 py-1 rounded-full text-xs font-medium;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-blue {
+  @apply bg-gradient-to-r from-[#50A7F9] to-[#3B82F6];
+}
+
+.bg-gradient-success {
+  @apply bg-gradient-to-r from-[#10B981] to-[#059669];
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  @apply bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg;
+}
+
+/* Enhanced shadows */
+.shadow-soft {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-hover {
+  @apply transition-shadow duration-300 hover:shadow-xl;
+}
+
+/* Responsive padding utility */
+.responsive-padding {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+/* Improved container */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}

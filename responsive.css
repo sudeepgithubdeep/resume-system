@@ -1,0 +1,106 @@
+/* Responsive design improvements */
+@media (max-width: 640px) {
+  .mobile-stack {
+    flex-direction: column !important;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+  }
+  
+  .mobile-text-center {
+    text-align: center !important;
+  }
+  
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  .mobile-mt-4 {
+    margin-top: 1rem !important;
+  }
+  
+  .mobile-p-4 {
+    padding: 1rem !important;
+  }
+  
+  .mobile-text-sm {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .tablet-p-6 {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Large screen enhancements */
+@media (min-width: 1025px) {
+  .desktop-max-width-lg {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .desktop-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .desktop-p-8 {
+    padding: 2rem !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .touch-larger-tap {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+  
+  .touch-spacing {
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* Print styles for resumes */
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+  
+  .print-break-avoid {
+    break-inside: avoid !important;
+  }
+}
+
+/* Accessibility improvements */
+.focus-visible:focus-visible {
+  outline: 2px solid var(--primary-color) !important;
+  outline-offset: 2px !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0066CC !important;
+    --text-primary: #000000 !important;
+    --text-secondary: #333333 !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-support {
+    --bg-light: #121212 !important;
+    --white: #1e1e1e !important;
+    --text-primary: #e0e0e0 !important;
+    --text-secondary: #a0a0a0 !important;
+  }
+}
